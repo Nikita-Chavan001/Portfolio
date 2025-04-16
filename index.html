@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Chavan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- Landing Page with Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Navbar (with Theme Toggle) -->
+     
+    <nav class="navbar">
+        <!-- Name Logo -->
+    <a href="#home" class="logo">Nikita Chavan</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="themeSwitch">
+            <label for="themeSwitch" class="toggle-label"></label>
+        </div>
+    </nav>
+
+    <!-- Main Landing Page -->
+    <header id="home" class="container">
+        <div class="text">
+            <h1 class="title">Hello,</h1>
+            <h1 class="title">I'm <span class="highlight">Nikita Chavan</span></h1>
+            <p class="subtitle">A Passionate Software Developer</p>
+            <button class="explore-btn" onclick="scrollToAbout()">Explore</button>
+        </div>
+        <div class="profile-pic">
+            <img src="Nikitaimg.png" alt="Nikita Chavan">
+        </div>
+    </header>
+
+<!-- About Section -->
+<section id="about" class="about-section hidden-section">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm <a href="https://www.linkedin.com/in/nikita-chavan-611102259" target="_blank" class="linkedin-link">Nikita Chavan</a>, 
+          a passionate Software Developer specializing in Artificial Intelligence and Data Science. Currently, I'm pursuing my <strong>B.Tech</strong> at <strong>Vishwakarma Institute of Technology, Pune, </strong>where I’m in my third year.
+
+            Driven by curiosity and innovation, I thrive on exploring cutting-edge technologies and continuously expanding my knowledge across diverse domains. My expertise spans <strong>AI-driven automation, full-stack web development, and data science,</strong> and I love building impactful solutions.
+            
+            Beyond coding, I enjoy <strong>designing, problem-solving, and participating in hackathons</strong>, where I push my limits and collaborate on groundbreaking ideas. If you're as excited about technology and innovation as I am, let’s connect and create something amazing! 
+        </p>
+        <a href="NikitaChavan_Resume.pdf" class="resume-btn" target="_blank">View Resume</a>
+
+    </div>
+</section>
+
+<section class="tech-stack" id="skills">
+    <h2 class="section-title">Technologies I Use</h2>
+
+    <div class="tech-category">
+        <h3>Languages</h3>
+        <div class="tech-icons">
+            <div class="tech-item">
+                <img src="assets/c-1.svg" alt="C">
+                <span>C</span>
+            </div>
+            <div class="tech-icons">
+                <div class="tech-item">
+                    <img src="assets/c.svg" alt="C++">
+                    <span>C++</span>
+                </div>
+        <div class="tech-icons">
+            <div class="tech-item">
+                <img src="assets/python.svg" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="tech-item">
+                <img src="assets/java.svg" alt="Java">
+                <span>Java</span>
+            </div>
+            <div class="tech-item">
+                <img src="assets/javascript-1.svg" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+                <img src="assets/html-1.svg" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="tech-item">
+                <img src="assets/css-3.svg" alt="CSS">
+                <span>CSS</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-category">
+        <h3>Databases & Backend</h3>
+        <div class="tech-icons">
+            <div class="tech-item">
+                <img src="assets/mysql-logo-pure.svg" alt="MySQL">
+                <span>MySQL</span>
+            </div>
+            <div class="tech-item">
+                <img src="assets/firebase-1.svg" alt="Firebase">
+                <span>Firebase</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-category">
+        <h3>Tools & Platforms</h3>
+        <div class="tech-icons">
+            <div class="tech-item">
+                <img src="assets/canva-wordmark-2.svg" alt="Canva">
+                <span>Canva</span>
+            </div>
+            <div class="tech-icons">
+                <div class="tech-item">
+                    <img src="assets/figma-icon.svg" alt="Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <img src="assets/git-icon.svg" alt="Git">
+                        <span>Git</span>
+                    </div>
+            <div class="tech-item">
+                <img src="assets/github-icon-1.svg" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+            <div class="tech-item">
+                <img src="assets/wordpress-icon.svg" alt="WordPress">
+                <span>WordPress</span>
+            </div>
+            <div class="tech-item">
+                <img src="assets/postman.svg" alt="Postman">
+                <span>Postman</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-category">
+        <h3>Frameworks & Libraries</h3>
+        <div class="tech-icons">
+            <div class="tech-item">
+                <img src="assets/react-1.svg" alt="React">
+                <span>React</span>
+            </div>
+            <div class="tech-item">
+                <img src="assets/bootstrap-5-1.svg" alt="Bootstrap">
+                <span>Bootstrap</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects -->
+<section class="projects-section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="assets/fitnessfusion.jpeg" alt="Project 1">
+                <div class="tech">HTML, CSS, Javascript, PHP, MySQL</div>
+            </div>
+            <h3 class="project-title">Fitness Fusion-GYM Website</h3>
+            <div class="project-buttons">
+                <a href="https://github.com/Nikita-Chavan001/FitnessFusion.git" class="github">Know More</a>
+                <!-- <a href="#" class="live-demo">Live Demo</a> -->
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="assets/EcoTrack.jpeg" alt="Project 2">
+                <div class="tech">React.js, Node.js, Firebase, OpenText API</div>
+            </div>
+            <h3 class="project-title">EcoTrack:Real-Time Carbon Footprint Calculator </h3>
+            <div class="project-buttons">
+                <a href="https://github.com/Dominic100/EcoTrack" class="github">Know More</a>
+                <!-- <a href="#" class="live-demo">Live Demo</a> -->
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="assets/NeuroAssist.jpeg" alt="Project 3">
+                <div class="tech">Flutter, Firebase, Gemini API, Google ML Kit</div>
+            </div>
+            <h3 class="project-title">NeuroAssist : Assistive App for Neurodiverse Individuals </h3>
+            <div class="project-buttons">
+                <a href="https://github.com/Dominic100/NeuroAssist" class="github">Know More</a>
+                <!-- <a href="#" class="live-demo">Live Demo</a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden projects -->
+    <div class="projects-container hidden" id="more-projects">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="assets/ANSWERGRADING (2).png" alt="Project 4">
+                <div class="tech">HTML, CSS, Javascript, Python, Flask, BERT</div>
+            </div>
+            <h3 class="project-title">Subjective Answer Evaluation For Efficient Grading Systems </h3>
+            <div class="project-buttons">
+                <a href="https://github.com/Nikita-Chavan001/Answer_Grading_System" class="github">Know More</a>
+                <!-- <a href="#" class="live-demo">Live Demo</a> -->
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="assets/Cashflow.jpg" alt="Project 5">
+                <div class="tech">Java, Graph Data Structure</div>
+            </div>
+            <h3 class="project-title">Cash Flow Minimizer</h3>
+            <div class="project-buttons">
+                <a href="https://github.com/Nikita-Chavan001/Cash-Flow-Minimizer" class="github">Know More</a>
+                <!-- <a href="#" class="live-demo">Live Demo</a> -->
+            </div>
+        </div>
+    </div>
+
+    <button id="toggle-projects" class="view-more-btn">View More</button>
+</section>
+
+<section id="achievements" class="achievements-section">
+    <h2 class="section-title">🏆 Achievements</h2>
+
+    <!-- Publications Section -->
+    <div class="achievement-category">
+        <h3 class="category-title">📖 Publications</h3>
+        <ul class="achievement-list">
+            <li>
+                <a href="assets/smart rakshak patent published_page-0001.jpg" target="_blank">Weapon Detecting Surveillance Robot (2024) - Patent</a>
+            </li>
+            <li>
+                <a href="assets/smart energy meter patent published_page-0001.jpg" target="_blank">Enhanced Energy Metering And Management Through Integrated IOT System (2024) - Patent</a>
+            </li>
+            <li>
+                <a href="assets/Screenshot 2025-04-07 110841.png" target="_blank">Integration of Handwritten Text Recognition and Subjective Answer Evaluation For Efficient Grading Systems (2025) - Patent</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="achievement-category">
+        <h3 class="category-title">🎓 Certifications</h3>
+        <ul class="achievement-list">
+            <li>
+                <a href="assets/Project Management Institute (PMI)®.pdf" target="_blank">Communication Foundations-Project Management Institute & Linkedin Learning</a>
+            </li>
+            <li>
+                <a href="assets/Coursera Q2ZR6Z82KP68.pdf" target="_blank"> Introduction to Information Technology and AWS
+                    Cloud - Coursera</a>
+            </li>
+            <li>
+                <a href="assets/Coursera XF56L694E9BP.pdf" target="_blank">AWS Cloud Technology Consultant - Coursera</a>
+            </li>
+            <li>
+                <a href="assets/LinkedIn Learning Certificate-SQL Essential Training.pdf" target="_blank">SQL Essential Training - Linkedin Learning</a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/drive/folders/1Y1wyYMt3ykZaVzhRpwBcvGyxvIIh5wAe?usp=sharing" target="_blank">📂 View All Certifications</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hackathon Wins Section -->
+    <div class="achievement-category">
+        <h3 class="category-title">🏅 Hackathon Wins</h3>
+        <ul class="achievement-list">
+            <li>
+                <span>🥇 Winner - Hacknosis: Sustainable MedTech 2024.</span>
+            </li>
+            <li>
+                <span>🥈 Top 10 in Prediction Bash-Data Analysis Competition.</span>
+            </li>
+            <!-- <li>
+                <span>🏅 Top 10 - Google Hackathon 2022</span>
+            </li> -->
+        </ul>
+    </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+    <h2 class="section-title">📩 Get in Touch</h2>
+    <p class="contact-subtext">I’m always open to new opportunities and collaborations. Feel free to reach out! <br>Have a question or want to work together? Drop me a message! </p>
+
+    <div class="contact-container">
+        <!-- Contact Details -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:nikitachavan9909@gmail.com">nikitachavan9909@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+917620368122">+91 7620368122</a></p>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/mrbpqevb" method="POST" class="contact-form">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Social Media Icons -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nikita-chavan-611102259/" target="_blank" class="social-icon linkedin">
+                <img src="assets/linkedin-svgrepo-com.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Nikita-Chavan001" target="_blank" class="social-icon github">
+                <img src="assets/github-mark-white.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/nikita_c23?igsh=MWRxNHNiNzlyMzl5Mw==" target="_blank" class="social-icon instagram">
+                <img src="assets/instagram.png" alt="Instagram">
+            </a>
+        </div>
+
+        <!-- Quick Links -->
+        <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Copyright -->
+        <p class="footer-text">© 2024 Nikita Balu Chavan. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
