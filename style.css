@@ -85,7 +85,6 @@ body.light-mode {
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-
     box-shadow: 0px 0px 20px rgba(255, 0, 119, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
@@ -207,11 +206,22 @@ body {
       position: absolute;
       top: 65px;
       right: 0;
-      background-color: #111;
+      background-color: var(--nav-bg-color);
       flex-direction: column;
       width: 100%;
       padding: 20px;
     }
+  
+    body.light-mode .nav-links {
+      background-color: rgba(255, 255, 255, 0.95); /* Light mode mobile menu */
+    }
+  
+
+  .navbar .right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
   
     .nav-links.show {
       display: flex;
@@ -229,10 +239,15 @@ body {
   }
   
 
-/* Light Mode Navbar */
-body.light-mode .navbar {
-    background: rgba(0, 0, 0, 0.1); /* Make it slightly darker */
-}
+  body.light-mode .navbar {
+    background: rgba(255, 255, 255, 0.95); /* Light background */
+    color: #000;
+  }
+
+  .theme-toggle input:checked + .toggle-label::after {
+    left: 25px;
+  }
+  
 
 .navbar ul {
     list-style: none;
