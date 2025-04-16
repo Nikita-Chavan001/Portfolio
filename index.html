@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,8 +20,8 @@
 
     <!-- Navbar (with Theme Toggle) -->
      
-    <nav class="navbar">
-        <!-- Name Logo -->
+    <!-- <nav class="navbar">
+        
     <a href="#home" class="logo">Nikita Chavan</a>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -34,8 +35,35 @@
             <input type="checkbox" id="themeSwitch">
             <label for="themeSwitch" class="toggle-label"></label>
         </div>
-    </nav>
+    </nav> -->
 
+
+    <nav class="navbar">
+        <!-- Name Logo -->
+        <a href="#home" class="logo">Nikita Chavan</a>
+      
+        <!-- Toggle Button for Mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      
+        <!-- Nav Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+          <input type="checkbox" id="themeSwitch">
+          <label for="themeSwitch" class="toggle-label"></label>
+        </div>
+      </nav>
+      
     <!-- Main Landing Page -->
     <header id="home" class="container">
         <div class="text">
@@ -358,6 +386,16 @@
 
     <script src="particles.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+      
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>
+      
 
 </body>
 </html>
